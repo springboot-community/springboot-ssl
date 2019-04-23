@@ -7,7 +7,7 @@ server:
   ssl:
     enabled: true
 
-    # 开启SSL安全通信,设置证明服务器身份的证书
+    # 开启SSL安全通信,并设置证明服务器身份的证书
     key-store: classpath:ssl/server.keystore
     key-store-type: PKCS12
     key-store-password: 123456
