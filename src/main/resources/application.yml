@@ -1,0 +1,20 @@
+server:
+  port: 443
+  servlet:
+    context-path: /
+
+  #SSL 配置类:org.springframework.boot.web.server.Ssl
+  ssl:
+    enabled: true
+
+    # 开启SSL安全通信,设置证明服务器身份的证书
+    key-store: classpath:ssl/server.keystore
+    key-store-type: PKCS12
+    key-store-password: 123456
+
+
+    # 以下配置为开启SSL双向验证,并且设置信任的客户端证书
+    client-auth: NEED             # 需要验证客户端身份
+    trust-store: classpath:ssl/server.keystore
+    trust-store-type: PKCS12
+    trust-store-password: 123456
