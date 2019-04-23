@@ -67,7 +67,7 @@ public class HttpClient {
                 .build();
 
         Request request = new Request.Builder()
-                .url("https://localhost:1024")
+                .url("https://localhost:443")
                 .build();
 
         Response response = client.newCall(request).execute();
