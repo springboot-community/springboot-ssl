@@ -14,7 +14,7 @@ public class IndexController {
     @GetMapping
     public Object index(){
         Map<String,String> map = new HashMap<>();
-        map.put("name","Javaweb开发者社区");
+        map.put("name","SpringBoot中文社区");
         return map;
     }
 }
